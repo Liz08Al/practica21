@@ -3,14 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Práctica 21</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Inicio</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                transition: all 0.9s;
+            }
+            body{
+                min-height: 100vh;
+                /*-webkit-perspective: 1000;*/
+                background-image: url("img/fodo_principal.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .new-game{
+                cursor: pointer;
+                font-size: 20px;
+                text-align: center;
+                padding: 20px;
+                width: 150px;
+                height: 64px;
+                border-radius: 10px;
+                background-color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+                color: blueviolet;
+                
+            }
+            #button{
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
-        <h1>Práctica 21</h1>
-        <h2>Lizbeth Alvarado Hernández</h2>
-        <h2> Joshua Mizraim Perez Perez </h2>
-        <p>Hola Mundo.....!!!</p>
-        <div><img src="img/logo.png"></div>
+        <div class="tablero" id="tablero">
+        </div>
+        <br>
+        <div class="new-game" id="button" onclick="generarTablero()">
+          <a id="button" href="4X3.html">Jugar 4X3</a>
+          <br>
+          <a id="button" href="4X4.html">Jugar 4X4</a>
+          <br>
+          <a id="button" href="5X4.html">Jugar 5X4</a>
+        </div>
     </body>
-</html> 
+</html>
